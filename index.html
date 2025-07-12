@@ -1,8 +1,113 @@
-<!-- index.html -->
 <!DOCTYPE html>
-<html>
-  <head><title>My Site</title></head>
-  <body>
-    <h1>Hello from ahmdssh!</h1>
-  </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ben - Software Designer</title>
+    
+    <!-- Google Fonts Import -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=VT323&display=swap" rel="stylesheet">
+    
+    <!-- Embedded CSS -->
+    <style>
+        /* * General Body Styling 
+         * Sets the background color, default text color, and centers content.
+         */
+        body {
+            background-color: #282725; /* The requested background color */
+            color: #E0E0E0; /* A light grey for better readability on the dark background */
+            font-family: 'IBM Plex Mono', monospace; /* The requested secondary font */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem;
+            box-sizing: border-box;
+        }
+
+        /* * Main Content Container 
+         * Provides a max-width to ensure content looks good on larger screens.
+         */
+        .container {
+            max-width: 600px;
+            width: 100%;
+        }
+
+        /* * Main Heading (h1)
+         * Uses VT323 as a substitute for "Departure Mono".
+         * Applies the bright, retro green color.
+         */
+        h1 {
+            /* * NOTE: "Departure Mono" is not a standard free web font.
+             * VT323 from Google Fonts is used here as it provides a similar
+             * retro, monospaced, pixelated look.
+             */
+            font-family: 'VT323', monospace;
+            color: #BEFD02; /* A vibrant lime green, similar to the image */
+            font-size: 3rem; /* Responsive font size */
+            font-weight: 400;
+            margin-bottom: 1rem;
+            line-height: 1.2;
+        }
+
+        /* * Subheading Paragraph
+         */
+        p {
+            font-size: 1.125rem;
+            line-height: 1.6;
+            margin-top: 0;
+            margin-bottom: 2rem;
+        }
+
+        /* * Navigation Links
+         * Styles the links to match the subheading text and adds spacing.
+         */
+        nav a {
+            color: #E0E0E0;
+            text-decoration: underline;
+            font-size: 1rem;
+            margin-right: 1.5rem; /* Space between links */
+            transition: color 0.3s ease;
+        }
+
+        /* Hover effect for links */
+        nav a:hover {
+            color: #BEFD02; /* Highlight color on hover */
+        }
+        
+        /* Media query for smaller screens */
+        @media (max-width: 600px) {
+            body {
+                align-items: flex-start;
+                padding-top: 5rem;
+            }
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            p {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Main content container -->
+    <main class="container">
+        <h1>Hi, my name is Ahmad.</h1>
+        <p>I am a muslim / Engineer based in Earth mainly.</p>
+        
+        <nav>
+            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">Github</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </nav>
+    </main>
+
+</body>
 </html>
