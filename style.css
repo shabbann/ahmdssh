@@ -69,6 +69,10 @@ h1, h2, h3, .logo {
     color: #fff;
     display: flex;
     align-items: center;
+    display: flex;
+    align-items: center;
+    text-decoration: none; /* This removes the underline */
+    color: inherit; /* This makes the text use the parent color */
 }
 
 .logo-icon {
@@ -113,7 +117,7 @@ h1, h2, h3, .logo {
 
 /* === HERO SECTION === */
 .hero {
-    min-height: 50vh;
+    min-height: 67vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -131,13 +135,12 @@ h1, h2, h3, .logo {
 .hero-subtitle {
     margin-top: 1rem;
     font-size: 1.25rem;
-    color: #94a3b8; /* slate-400 */
+    color: #94a3b8; 
 }
 
 /* === CARDS (for About, Writings, Projects) === */
 .card {
-    background-color: rgba(22, 27, 34, 0.8);
-    border: 1px solid rgba(48, 54, 61, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     border-radius: 0.75rem;
     padding: 1.5rem;
     transition: transform 0.3s ease, border-color 0.3s ease;
@@ -146,8 +149,8 @@ h1, h2, h3, .logo {
 }
 
 .card:hover {
-    transform: translateY(-5px);
-    border-color: rgba(139, 148, 158, 0.5);
+    transform: translateY(-1px);
+    border-color: rgba(0, 0,0, 0.5);
 }
 
 .about-card {
