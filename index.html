@@ -4,110 +4,143 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ahmdssh</title>
-    
-    <!-- Google Fonts Import -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=VT323&display=swap" rel="stylesheet">
     
-    <!-- Embedded CSS -->
-    <style>
-        /* * General Body Styling 
-         * Sets the background color, default text color, and centers content.
-         */
-        body {
-            background-color: #282725; /* The requested background color */
-            color: #E0E0E0; /* A light grey for better readability on the dark background */
-            font-family: 'IBM Plex Mono', monospace; /* The requested secondary font */
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            margin: 0;
-            padding: 2rem;
-            box-sizing: border-box;
-        }
-
-        /* * Main Content Container 
-         * Provides a max-width to ensure content looks good on larger screens.
-         */
-        .container {
-            max-width: 600px;
-            width: 100%;
-        }
-
-        /* * Main Heading (h1)
-         * Uses VT323 as a substitute for "Departure Mono".
-         * Applies the bright, retro green color.
-         */
-        h1 {
-            /* * NOTE: "Departure Mono" is not a standard free web font.
-             * VT323 from Google Fonts is used here as it provides a similar
-             * retro, monospaced, pixelated look.
-             */
-            font-family: 'VT323', monospace;
-            color: #BEFD02; /* A vibrant lime green, similar to the image */
-            font-size: 3rem; /* Responsive font size */
-            font-weight: 400;
-            margin-bottom: 1rem;
-            line-height: 1.2;
-        }
-
-        /* * Subheading Paragraph
-         */
-        p {
-            font-size: 1.125rem;
-            line-height: 1.6;
-            margin-top: 0;
-            margin-bottom: 2rem;
-        }
-
-        /* * Navigation Links
-         * Styles the links to match the subheading text and adds spacing.
-         */
-        nav a {
-            color: #E0E0E0;
-            text-decoration: underline;
-            font-size: 1rem;
-            margin-right: 1.5rem; /* Space between links */
-            transition: color 0.3s ease;
-        }
-
-        /* Hover effect for links */
-        nav a:hover {
-            color: #BEFD02; /* Highlight color on hover */
-        }
-        
-        /* Media query for smaller screens */
-        @media (max-width: 600px) {
-            body {
-                align-items: flex-start;
-                padding-top: 5rem;
-            }
-
-            h1 {
-                font-size: 2.5rem;
-            }
-
-            p {
-                font-size: 1rem;
-            }
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- Main content container -->
-    <main class="container">
-        <h1>Hi, my name is Ahmad.</h1>
-        <p>I am a muslim / Engineer based in Earth mainly.</p>
-        
-        <nav>
-            <a href="#" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">Github</a>
-            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        </nav>
-    </main>
+    <canvas id="star-canvas"></canvas>
 
+    <div class="content-wrapper">
+
+        <header  >
+            <div  class="container header-container">
+                <div href="ahmdssh.me" class="logo">
+                    <svg class="logo-icon" viewBox="0 0 24 22" xmlns="http://www.w3.org/2000/svg">
+                        <g fill="currentColor" opacity="0.4">
+                            <rect x="11.5" y="6.5" width="1" height="1" />
+                            <rect x="11.5" y="16.5" width="1" height="1" />
+                            <rect x="6.5" y="11.5" width="1" height="1" />
+                            <rect x="16.5" y="11.5" width="1" height="1" />
+                            <rect x="9.5" y="9.5" width="1" height="1" />
+                            <rect x="13.5" y="9.5" width="1" height="1" />
+                            <rect x="9.5" y="13.5" width="1" height="1" />
+                            <rect x="13.5" y="13.5" width="1" height="1" />
+                            <rect x="10.5" y="8.5" width="1" height="1" />
+                            <rect x="12.5" y="8.5" width="1" height="1" />
+                            <rect x="8.5" y="10.5" width="1" height="1" />
+                            <rect x="14.5" y="10.5" width="1" height="1" />
+                            <rect x="8.5" y="12.5" width="1" height="1" />
+                            <rect x="14.5" y="12.5" width="1" height="1" />
+                            <rect x="10.5" y="14.5" width="1" height="1" />
+                            <rect x="12.5" y="14.5" width="1" height="1" />
+                        </g>
+                        <g fill="currentColor" opacity="0.7">
+                            <rect x="11.5" y="7.5" width="1" height="1" />
+                            <rect x="11.5" y="15.5" width="1" height="1" />
+                            <rect x="7.5" y="11.5" width="1" height="1" />
+                            <rect x="15.5" y="11.5" width="1" height="1" />
+                            <rect x="10.5" y="9.5" width="1" height="1" />
+                            <rect x="12.5" y="9.5" width="1" height="1" />
+                            <rect x="9.5" y="10.5" width="1" height="1" />
+                            <rect x="13.5" y="10.5" width="1" height="1" />
+                            <rect x="9.5" y="12.5" width="1" height="1" />
+                            <rect x="13.5" y="12.5" width="1" height="1" />
+                            <rect x="10.5" y="13.5" width="1" height="1" />
+                            <rect x="12.5" y="13.5" width="1" height="1" />
+                            <rect x="10.5" y="10.5" width="1" height="1" />
+                            <rect x="12.5" y="10.5" width="1" height="1" />
+                            <rect x="10.5" y="12.5" width="1" height="1" />
+                            <rect x="12.5" y="12.5" width="1" height="1" />
+                        </g>
+                        <g fill="currentColor" opacity="1.0">
+                            <rect x="11.5" y="8.5" width="1" height="1" />
+                            <rect x="11.5" y="14.5" width="1" height="1" />
+                            <rect x="8.5" y="11.5" width="1" height="1" />
+                            <rect x="14.5" y="11.5" width="1" height="1" />
+                            <rect x="11.5" y="9.5" width="1" height="1" />
+                            <rect x="11.5" y="13.5" width="1" height="1" />
+                            <rect x="9.5" y="11.5" width="1" height="1" />
+                            <rect x="13.5" y="11.5" width="1" height="1" />
+                            <rect x="11.5" y="10.5" width="1" height="1" />
+                            <rect x="11.5" y="12.5" width="1" height="1" />
+                            <rect x="10.5" y="11.5" width="1" height="1" />
+                            <rect x="12.5" y="11.5" width="1" height="1" />
+                            <rect x="11.5" y="11.5" width="1" height="1" />
+                        </g>
+                    </svg>
+                    ahmdssh
+                </div>
+                <nav class="main-nav">
+                    <a href="wrote.html" class="nav-link">Wrote</a>
+                    <a href="about.html" class="nav-link">About</a>
+                    <a href="built.html" class="nav-link">Built</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="container main-content">
+
+            <section class="hero">
+                <h1 class="hero-title">Hi, I'm Ahmad</h1>
+                <p class="hero-subtitle">A Muslim, engineer, and a dreamer</p>
+            </section>
+
+
+
+            <section id="writings" class="section">
+                <h2 class="section-title">Recent Writings</h2>
+                <div class="item-grid writings-grid">
+                    <div class="card">
+                        <span class="card-date">July 13, 2025</span>
+                        <h3 class="card-title">On Finding Focus</h3>
+                        <p class="card-text">A short reflection on navigating the noise of the digital world to find a quiet place for deep work and creativity.</p>
+                        <a href="#" class="card-link">Read more &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <span class="card-date">June 28, 2025</span>
+                        <h3 class="card-title">The Joy of a Side Project</h3>
+                        <p class="card-text">Exploring why building something for yourself, with no deadlines or expectations, can be the most rewarding work of all.</p>
+                        <a href="#" class="card-link">Read more &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <span class="card-date">June 15, 2025</span>
+                        <h3 class="card-title">A War With The Blank Page</h3>
+                        <p class="card-text">Thoughts on writer's block, creative struggle, and the small victories that keep us moving forward.</p>
+                        <a href="#" class="card-link">Read more &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects" class="section">
+                <h2 class="section-title">Things I've Built</h2>
+                <div class="item-grid projects-grid">
+                    <div class="card">
+                        <h3 class="card-title">Starlight Navigator</h3>
+                        <p class="card-text">A tiny web app that uses your location to show you the constellations currently visible in the night sky.</p>
+                        <a href="#" class="card-link">View Project &rarr;</a>
+                    </div>
+                    <div class="card">
+                        <h3 class="card-title">Serene CSS</h3>
+                        <p class="card-text">A minimalist CSS framework designed for content-focused websites, with a focus on typography and dark mode.</p>
+                        <a href="#" class="card-link">View on GitHub &rarr;</a>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+
+        <footer class="main-footer">
+            <div class="container">
+                </div>
+        </footer>
+
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
