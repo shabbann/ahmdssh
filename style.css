@@ -2,6 +2,9 @@
 html {
     scroll-behavior: smooth;
 }
+li{
+    margin-top: 13px;
+}
 
 body {
     font-family: 'IBM plex mono', sans-serif; /* A more readable font for paragraphs */
@@ -11,6 +14,16 @@ body {
     -moz-osx-font-smoothing: grayscale;
     margin: 0;
 }
+a {
+    color: blue;
+    text-decoration: none; /* no underline */
+  }
+  
+ul{
+    list-style-type: none; /* Remove bullets */
+    padding: 0; /* Remove padding */
+    margin: 0; /* Remove margins */
+  }
 .page
 {
     display:none;
@@ -71,8 +84,8 @@ h1, h2, h3, .logo {
     align-items: center;
     display: flex;
     align-items: center;
-    text-decoration: none; /* This removes the underline */
-    color: inherit; /* This makes the text use the parent color */
+    text-decoration: none; 
+    color: inherit; 
 }
 
 .logo-icon {
@@ -98,7 +111,7 @@ h1, h2, h3, .logo {
 
 /* === MAIN CONTENT & SECTIONS === */
 .main-content {
-    padding-top: 8rem;
+    padding-top: 6rem;
     padding-bottom: 4rem;
 }
 
@@ -117,7 +130,8 @@ h1, h2, h3, .logo {
 
 /* === HERO SECTION === */
 .hero {
-    min-height: 67vh;
+    min-height: 50vh;
+    padding-bottom: 16rem;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -147,7 +161,6 @@ h1, h2, h3, .logo {
     display: flex;
     flex-direction: column;
 }
-
 .card:hover {
     transform: translateY(-1px);
     border-color: rgba(0, 0,0, 0.5);
@@ -214,6 +227,48 @@ h1, h2, h3, .logo {
     text-align: center;
     color: #94a3b8; /* slate-400 */
 }
+.main-about{
+display: flex;
+width: 100%;
+
+}
+.whosme{
+flex-grow: 2;
+margin-left: 15vw;
+margin-top: 10vh;
+
+}
+.whatIlike{
+ flex-grow:1;
+margin-top: 10vh;
+margin-left: 15vw;
+}
+/*=== wrote === */
+.wrote-wrapper{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.wrote{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    margin-bottom: 5vh;
+    width: 45vw;
+    height: 100%;
+    border-radius: 1rem;
+    text-align: center;
+
+}
+.wrote .card-date{
+    margin-bottom: 0;
+
+}
+
 
 /* === RESPONSIVE STYLES === */
 @media (min-width: 768px) {
