@@ -18,6 +18,9 @@ a {
     color: blue;
     text-decoration: none; /* no underline */
   }
+
+
+
   
 ul{
     list-style-type: none; /* Remove bullets */
@@ -230,18 +233,31 @@ h1, h2, h3, .logo {
 .main-about{
 display: flex;
 width: 100%;
-
+justify-content:flex-start;
 }
 .whosme{
-flex-grow: 2;
-margin-left: 15vw;
+width:60vw;
+margin-left:10vw;
+	margin-right:5vw;
 margin-top: 10vh;
 
 }
+.about{
+    display: block;
+    width: 50vw;
+    word-break: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
+}
+.about-links{
+display:flex;
+gap:2vw
+}
 .whatIlike{
- flex-grow:1;
+	width:40vw;
+
 margin-top: 10vh;
-margin-left: 15vw;
+margin-right:5vw;
 }
 /*=== wrote === */
 .wrote-wrapper{
@@ -264,8 +280,19 @@ margin-left: 15vw;
     text-align: center;
 
 }
+
 .wrote .card-date{
     margin-bottom: 0;
+}
+
+
+.blog-post{
+text-align:left;
+background-color: rgba(0, 0, 0, 0.6);
+width:60vw;
+margin-left:10vw;
+line-height: 1.6;
+	margin-top:5vh;
 
 }
 
