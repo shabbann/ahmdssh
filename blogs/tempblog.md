@@ -1,7 +1,7 @@
 ---
 Title: "title"
 Date: "date"
-Favorite: "T/F"
+Favorite: "T"
 sum: "sometext"
 ---
 asdafkpogkapopk
