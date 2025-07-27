@@ -38,7 +38,7 @@ function Star(x, y, radius, opacity, color) {
 
     this.update = function() {
         // This controls the speed of the twinkle effect.
-        const fadeSpeed = 0.0004; 
+        const fadeSpeed = 0.0007; 
 
         if (this.fading === 'in') {
             this.opacity += fadeSpeed;

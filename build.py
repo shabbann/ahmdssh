@@ -10,10 +10,10 @@ def gen_blog(blog,meta):
     temppath="temps/blogtemp.html"
     temp=""
     try:
-        os.mknod("blogs/{}.html".format(meta["Title"]))
+        os.mknod("{}.html".format(meta["Title"]))
     except:
         pass
-    genblogpath="blogs/{}.html".format(meta["Title"])
+    genblogpath="{}.html".format(meta["Title"])
     bloghtml=markdown.markdown(blog)
     with open(temppath) as file:
         temp=file.read()
@@ -80,7 +80,7 @@ def main():
             ##delete the yaml lines
             blog_lines=blog.split("\n")
             del blog_lines[0:6]
-            blog="".join(blog_lines)
+            blog="\n".join(blog_lines)
 
             try:
                 gen_blog(blog,meta)
